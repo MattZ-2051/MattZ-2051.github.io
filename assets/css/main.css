@@ -1740,15 +1740,38 @@ input, select, textarea {
 
 /* Image */
 
+    #first-img img {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+
+
 	.image {
 		display: inline-block;
 		border: 0;
-	}
+    }
+
+    .image:hover {
+        transform: scale(1.1);
+    }
 
 		.image img {
 			display: block;
 			width: 100%;
-		}
+        }
+
+        .project-right-images img {
+            width: 500px;
+            object-fit: cover;
+        }
+
+        .project-left-images img {
+            width: 420px;
+            object-fit: cover;
+        }
 
 		.image.fit {
 			display: block;
@@ -1756,9 +1779,10 @@ input, select, textarea {
 		}
 
 		.image.featured {
-			display: block;
-			width: 100%;
-			margin: 0 0 2em 0;
+            display: block;
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 10px;
 		}
 
 		.image.left {
