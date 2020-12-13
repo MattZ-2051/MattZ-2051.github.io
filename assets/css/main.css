@@ -1754,8 +1754,9 @@ input, select, textarea {
 		border: 0;
     }
 
-    .image:hover {
+    .project-left-images img:hover, .project-right-images img:hover {
         transform: scale(1.1);
+
     }
 
 		.image img {
@@ -2248,7 +2249,6 @@ input, select, textarea {
 
 				#main > section.dark a {
 					color: #fff;
-					border-color: inherit;
 				}
 
 					#main > section.dark a:hover {
